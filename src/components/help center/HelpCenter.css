@@ -1,0 +1,87 @@
+.helpCenter {
+  display: block;
+  padding: 16px;
+  text-align: center;
+  position: relative;
+}
+
+.helpCenter .icon {
+  position: absolute;
+  background: var(--background-color-white);
+  border: 10px solid var(--background-color-white);
+  font-size: 48px;
+  border-radius: 50%;
+  top: -8px;
+  right: 50%;
+  transform: translate(50%);
+  z-index: 100;
+}
+
+.content {
+  position: relative;
+  padding: 16px;
+  background: var(--default-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.content h3 {
+  font-size: 16px;
+  margin-top: 16px;
+  padding: 16px 0;
+  font-weight: 800;
+  color: var(--text-color-black);
+}
+
+.content p {
+  font-size: 15px;
+  color: var(--text-color-dark);
+  padding-bottom: 16px;
+  font-weight: 500;
+}
+
+.content .btn {
+  position: relative;
+  color: var(--text-color-dark);
+  z-index: 1000;
+}
+
+.content .btn:hover {
+  background: var(--secondary-color);
+}
+
+.circle1,
+.circle2 {
+  position: absolute;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.circle1 {
+  height: 100px;
+  width: 100px;
+  top: -50px;
+  left: -50px;
+}
+
+.circle2 {
+  height: 150px;
+  width: 150px;
+  bottom: -80px;
+  right: -70px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .helpCenter {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .helpCenter {
+    display: none !important;
+  }
+}

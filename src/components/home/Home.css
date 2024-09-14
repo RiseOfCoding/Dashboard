@@ -1,0 +1,22 @@
+.home-container {
+  width: 82%;
+  height: 100%;
+  padding: 32px;
+  overflow: auto;
+}
+
+.bottom {
+  margin-top: 32px;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.listing-section {
+  flex-basis: 70%;
+}
+
+@media screen and (max-width: 1024px) {
+  .bottom {
+    flex-direction: column;
+  }
+}

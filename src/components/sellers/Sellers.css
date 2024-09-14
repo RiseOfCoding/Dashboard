@@ -1,0 +1,71 @@
+.sellers {
+  width: 100%;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.top-sellers .heading,
+.featured-sellers .heading {
+  padding: 16px 0;
+  justify-content: space-between;
+}
+
+.top-sellers .heading .btn,
+.featured-sellers .heading .btn {
+  padding: 8px 16px;
+}
+
+.card {
+  padding: 16px 24px;
+  border-radius: 16px;
+  background: var(--background-color-white);
+  gap: 16px;
+  box-shadow: 0 2px 4px var(--text-color-light);
+}
+
+.users {
+  padding-right: 16px;
+  border-right: 2px solid var(--text-color-light);
+}
+
+.users img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f8f6f7;
+  transition: 0.5s ease;
+}
+
+.users img:hover {
+  transform: translateY(-10px);
+}
+
+.card-text span {
+  color: var(--text-color-black);
+  font-weight: 500;
+}
+
+.card-text span small {
+  font-weight: 400;
+}
+
+.date {
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sellers .card {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sellers {
+    flex-direction: column;
+  }
+  .sellers .card {
+    flex-direction: row;
+  }
+}

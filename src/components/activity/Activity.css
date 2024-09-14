@@ -1,0 +1,78 @@
+.activity {
+  flex-basis: 50%;
+}
+
+.activity .heading {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.activity .heading h1 {
+  font-size: 20px;
+  color: var(--text-color-black);
+  font-weight: 700;
+}
+
+.activity .heading .btn {
+  border: 1px solid transparent;
+}
+
+.activity .heading .btn:hover {
+  border: 1px solid var(--default-color);
+}
+
+.customers {
+  margin-top: 16px;
+}
+
+.customer {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.customer img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px var(--text-color-light);
+  margin-right: 16px;
+}
+
+.customer-details {
+  flex: 1;
+}
+
+.customer-details .name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color-black);
+  display: block;
+}
+
+.customer-details small {
+  font-weight: 500;
+  color: var(--text-color-dark);
+  font-size: 13px;
+}
+
+.duration {
+  color: var(--text-color-dark);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .activity {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .customer-details small {
+    font-size: 12px;
+  }
+  .duration {
+    font-size: 10px;
+  }
+}
